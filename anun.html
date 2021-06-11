@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg" href="img/logo.svg">
+    <link rel="stylesheet" href="css/anunstyle.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <title>ImaxVentas | TP Integrador</title>
+</head>
+
+<body>
+    <script src="js/navandfoot.js"></script>
+    <!--NAVBAR-->
+    <div id="navbar"></div><br>
+    <!--NAVBAR-->
+    <header class="headeranuncontainer">
+        <div class="textanun">
+            <h1>-ANUNCIOS-</h1>
+        </div>
+    </header>
+    <div class="container">
+        <div class="col">
+            <div class="buscador">
+                <form action="" target="_blank" name="buscar">
+                    <label>Buscar por palabra clave</label><br>
+                    <input id="palabra" type="text" name="palabra" placeholder="Ej: Alquiler, Bicicleta, Mascota"><br>
+                    <label>Filtrar por región</label><br>
+                    <select id="region" name="region">
+                        <option disabled selected>-Elija una opción</option>
+                        <option value="Norte">Norte</option>
+                        <option value="Centro">Centro</option>
+                        <option value="Sur">Sur</option>
+                    </select>
+                    <br>
+                    <label>Filtrar por categoria</label><br>
+                    <select id="categoria" name="categoria">
+                        <option disabled selected>-Elija una opción</option>
+                        <option value="Venta">Venta</option>
+                        <option value="Alquiler">Alquiler</option>
+                        <option value="Departamento">Departamentos</option>
+                        <option value="Monohambiente">Monohambientes</option>
+                    </select>
+                    <button>Buscar</button>
+                </form>
+            </div>
+            <div class="anuncios">
+                <h1>Avisos Destacados</h1>
+                <div class="slider owl-carousel">
+                    <div class="card card-1"><a href="https://google.com.ar" target="_blank" rel="noopener noreferrer">Se Vende</a></div>
+                    <div class="card card-2"><a href="https://google.com.ar" target="_blank" rel="noopener noreferrer">En Venta</a></div>
+                    <div class="card card-3"><a href="https://google.com.ar" target="_blank" rel="noopener noreferrer">Alquiler</a></div>
+                    <div class="card card-4"><a href="https://google.com.ar" target="_blank" rel="noopener noreferrer">En Venta</a></div>
+                    <div class="card card-5"><a href="https://google.com.ar" target="_blank" rel="noopener noreferrer">Alquiler</a></div>
+                    <div class="card card-6"><a href="https://google.com.ar" target="_blank" rel="noopener noreferrer">Se Vende</a></div>
+                    <div class="card card-7"><a href="https://google.com.ar" target="_blank" rel="noopener noreferrer">Alquiler</a></div>
+                    <div class="card card-8"><a href="https://google.com.ar" target="_blank" rel="noopener noreferrer">Alquiler</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+
+        <div class="avisocontainer">
+            <h1>Ultimos Avisos</h1>
+            <a href="https://google.com.ar" target="_blank" rel="noopener noreferrer">
+                <div class="avisouno">
+                    <p class="fecha">Hoy<br>12:04</p>
+                    <img src="img/anu1.jpg" alt="Anuncio 1">
+                    <p class="precio">Casa Colonial<br><strong>$10.500</strong></p>
+                    <p class="region">Region Norte<br>Alquiler</p>
+                </div>
+                <div class="avisodos avisouno">
+                    <p class="fecha">Ayer<br>17:50</p>
+                    <img src="img/anu2.jpg" alt="Anuncio 2">
+                    <p class="precio">Casa Quinta<br><strong>$2.000.000</strong></p>
+                    <p class="region">Region Sur<br>Venta</p>
+                </div>
+                <div class="avisotres avisouno">
+                    <p class="fecha">Ayer<br>16:40</p>
+                    <img src="img/anu3.jpg" alt="Anuncio 3">
+                    <p class="precio">Casa Colonial<br><strong>$2.000.000</strong></p>
+                    <p class="region">Region Norte<br>Alquiler</p>
+                </div>
+                <div class="avisocuatro avisouno">
+                    <p class="fecha">Ayer<br>12:04</p>
+                    <img src="img/anu4.jpg" alt="Anuncio 4">
+                    <p class="precio">Casa Colonial<br><strong>$2.000.000</strong></p>
+                    <p class="region">Region Norte<br>Alquiler</p>
+                </div>
+                <div class="avisocinco avisouno">
+                    <p class="fecha">Viernes<br>22:04</p>
+                    <img src="img/anu5.jpg" alt="Anuncio 5">
+                    <p class="precio">Casa Colonial<br><strong>$2.000.000</strong></p>
+                    <p class="region">Region Norte<br>Alquiler</p>
+                </div>
+                <div class="avisoseis avisouno">
+                    <p class="fecha">Viernes<br>12:35</p>
+                    <img src="img/anu6.jpg" alt="Anuncio 6">
+                    <p class="precio">Casa Colonial<br><strong>$2.000.000</strong></p>
+                    <p class="region">Region Norte<br>Alquiler</p>
+                </div>
+            </a>
+        </div>
+    </div><br>
+
+    <!--FOOTER-->
+    <div id="footer"></div>
+    <!--FOOTER-->
+
+    <script src="js/carousel.js"></script>
+</body>
+
+</html>

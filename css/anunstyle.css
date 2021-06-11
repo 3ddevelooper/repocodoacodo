@@ -1,0 +1,608 @@
+/*FUENTES*/
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap');
+
+/*FUENTES*/
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.headeranuncontainer {
+    width: 100%;
+    height: 450px;
+    margin-top: -30px;
+    background: url(../img/headeranun.png) no-repeat center center/cover;
+}
+
+.textanun {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 4rem;
+    padding-top: 150px;
+    color: white;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.col {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.col .buscador {
+    width: 60%;
+}
+
+.col .buscador form {
+    margin: 30px 10px 0px 20px;
+    padding: 10px;
+    height: 200px;
+    border: #e4e4e4 solid 1px;
+    border-radius: 10px 10px;
+    background-color: #e4e4e4;
+}
+
+form input,
+select {
+    width: 100%;
+    font-family: 'Noto Sans JP', sans-serif;
+    border-radius: 5px 5px;
+}
+
+input,
+select {
+    border: none;
+}
+
+button {
+    border: none;
+    width: 100%;
+    margin: 5px auto;
+    height: 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    border: #de8716 solid 1px;
+    border-radius: 5px 5px;
+    font-family: 'Lato', sans-serif;
+    color: white;
+    background-color: #de8716;
+}
+
+.anuncios {
+    width: 100%;
+}
+
+.anuncios h1 {
+    margin-left: 20px;
+    color: #de8716;
+}
+
+.anuncios .slider {
+    width: 100%;
+    max-width: 1080px;
+    height: 150px;
+    margin: 0 auto;
+    padding: 0 10px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.slider .card {
+    line-height: 120px;
+    text-align: center;
+    margin: 10px 0;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.slider .card a {
+    width: 100%;
+    background-color: #e4e4e4b2;
+    color: #de8716;
+    font-weight: bold;
+    padding: 5px 65px 5px 60px;
+    border-radius: 10px;
+}
+
+.slider .card-1 {
+    background: url(../img/slider1.png) no-repeat center center/cover;
+}
+
+.slider .card-2 {
+    background: url(../img/slider2.jpeg) no-repeat center center/cover;
+}
+
+.slider .card-3 {
+    background: url(../img/slider3.jpg) no-repeat center center/cover;
+}
+
+.slider .card-4 {
+    background: url(../img/slider4.jpg) no-repeat center center/cover;
+}
+
+.slider .card-5 {
+    background: url(../img/slider5.png) no-repeat center center/cover;
+}
+
+.slider .card-6 {
+    background: url(../img/slider6.png) no-repeat center center/cover;
+}
+
+.slider .card-7 {
+    background: url(../img/slider7.jpg) no-repeat center center/cover;
+}
+
+.slider .card-8 {
+    background: url(../img/slider8.jpg) no-repeat center center/cover;
+}
+
+.avisocontainer {
+    width: 80%;
+    height: 100%;
+    display: block;
+    margin: 0px 0px 20px 270px;
+}
+
+.avisocontainer h1 {
+    margin-left: 20px;
+    color: #de8716;
+}
+
+.avisocontainer .avisouno {
+    display: flex;
+    justify-content: space-evenly;
+    cursor: pointer;
+    padding: 10px;
+    margin: 0px 10px 20px 0px;
+    border-radius: 10px 10px;
+    background-color: #e4e4e4;
+}
+
+.avisouno .fecha {
+    margin: 10px 0px 0px -450px;
+}
+
+.avisouno .precio {
+    margin: 10px 50px 0px -450px;
+}
+
+.avisouno .region {
+    font-size: 0.8rem;
+    text-align: right;
+    margin: 20px -400px 0px 0px;
+}
+
+strong {
+    color: #de8716
+}
+
+.avisouno p {
+    color: black;
+}
+
+.avisouno img {
+    width: 100px;
+    height: 100px;
+    margin: 0px -20px 0px -480px;
+    border-radius: 10px 10px;
+}
+
+.avisodos img {
+    margin: 0px -30px 0px -505px;
+}
+
+.avisodos .fecha {
+    margin: 10px 10px 0px -460px;
+}
+
+.avisotres .fecha,
+.avisocuatro .fecha {
+    margin: 10px 0px 0px -450px;
+}
+
+.avisocinco .fecha,
+.avisoseis .fecha {
+    margin: 10px 0px 0px -460px;
+}
+
+@media only screen and (min-width: 360px) and (max-width:408px) {
+    body {
+        width: 100%;
+        height: 100%;
+    }
+    /*HEADER*/
+    .headeranuncontainer {
+        width: 100%;
+        height: 250px;
+        margin-top: -75px;
+    }
+    .textanun {
+        font-size: 1.1em;
+    }
+    .col {
+        display: block;
+    }
+    .col .buscador {
+        width: 95%;
+        margin: 0px 0px 0px -10px;
+    }
+    .col .buscador form {
+        width: 100%;
+        margin: 20px 0px 0px 20px;
+        padding: 10px;
+        height: 200px;
+        border: #e4e4e4 solid 1px;
+        border-radius: 10px 10px;
+        background-color: #e4e4e4;
+    }
+    .anuncios {
+        width: 100%;
+        margin: 20px 0px 0px 0px;
+        overflow: hidden;
+    }
+    .anuncios h1 {
+        font-size: 0.9rem;
+        margin: 0px 0px 0px 0px;
+        color: #de8716;
+        text-align: center;
+    }
+    .anuncios .slider {
+        width: 100%;
+        height: 130px;
+        cursor: pointer;
+    }
+    .slider .card {
+        width: 100%;
+        max-width: 300px;
+        margin: 0px 0px 0px 20px;
+    }
+    .slider .card a {
+        width: 98%;
+    }
+    .avisocontainer {
+        width: 300px;
+        height: 100%;
+        display: block;
+        margin: 0px 0px 0px 20px;
+    }
+    .avisocontainer h1 {
+        font-size: 0.9rem;
+        margin: 10px 0px 10px 0px;
+        color: #de8716;
+        text-align: center;
+    }
+    .avisocontainer .avisouno {
+        display: flex;
+        justify-content: space-evenly;
+        cursor: pointer;
+        width: 310px;
+        margin: 0px 0px 10px 10px;
+    }
+    .avisouno .fecha {
+        font-size: 0.9rem;
+        margin: 10px 30px 0px 0px;
+    }
+    .avisouno .precio {
+        font-size: 0.9rem;
+        margin: 10px 10px 0px 10px;
+    }
+    .avisouno .region {
+        font-size: 0.6rem;
+        text-align: right;
+        margin: 30px 0px 0px 0px;
+    }
+    strong {
+        color: #de8716
+    }
+    .avisouno p {
+        color: black;
+    }
+    .avisouno img {
+        width: 80px;
+        height: 80px;
+        margin: 0px 0px 0px -40px;
+        border-radius: 10px 10px;
+    }
+}
+
+@media only screen and (min-width: 410px) and (max-width: 575px) {
+    /*HEADER*/
+    .headeranuncontainer {
+        width: 100%;
+        height: 250px;
+        margin-top: -75px;
+    }
+    .textanun {
+        font-size: 1.1em;
+    }
+    .col {
+        display: block;
+    }
+    .col .buscador {
+        width: 100%;
+    }
+    .col .buscador form {
+        margin: 30px 10px 0px 20px;
+        padding: 10px;
+        height: 200px;
+        border: #e4e4e4 solid 1px;
+        border-radius: 10px 10px;
+        background-color: #e4e4e4;
+    }
+    .anuncios {
+        width: 100%;
+        margin: 20px 0px 0px 0px;
+        overflow: hidden;
+    }
+    .anuncios h1 {
+        font-size: 0.9rem;
+        margin: 10px 0px 10px 20px;
+        color: #de8716;
+        text-align: center;
+    }
+    .anuncios .slider {
+        width: 100%;
+        height: 130px;
+    }
+    .slider .card {
+        width: 100%;
+        max-width: 365px;
+        margin-left: 10px;
+    }
+    .slider .card a {
+        width: 100%;
+        margin: 0px 0px 0px 0px;
+    }
+    .avisocontainer {
+        width: 95%;
+        height: 100%;
+        display: block;
+        margin: 0px 0px 0px 20px;
+    }
+    .avisocontainer h1 {
+        font-size: 0.9rem;
+        margin: 10px 0px 10px 20px;
+        color: #de8716;
+        text-align: center;
+    }
+    .avisocontainer .avisouno {
+        display: flex;
+        justify-content: space-evenly;
+        cursor: pointer;
+    }
+    .avisouno .fecha {
+        font-size: 0.9rem;
+        margin: 10px 40px 0px 0px;
+    }
+    .avisouno .precio {
+        font-size: 0.9rem;
+        margin: 10px 10px 0px 10px;
+    }
+    .avisouno .region {
+        font-size: 0.6rem;
+        text-align: right;
+        margin: 30px 0px 0px 0px;
+    }
+    strong {
+        color: #de8716
+    }
+    .avisouno p {
+        color: black;
+    }
+    .avisouno img {
+        width: 80px;
+        height: 80px;
+        margin: 0px 0px 0px -40px;
+        border-radius: 10px 10px;
+    }
+    .avisodos img {
+        margin: 0px -10px 0px -40px;
+    }
+    .avisodos .fecha {
+        margin: 10px 30px 0px -10px;
+    }
+    .avisocinco .fecha,
+    .avisoseis .fecha {
+        margin: 10px 40px 0px -10px;
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    .headeranuncontainer {
+        width: 100%;
+        height: 250px;
+        margin-top: -75px;
+    }
+    .textanun {
+        font-size: 1.1em;
+    }
+    .col {
+        display: block;
+    }
+    .col .buscador {
+        width: 90%;
+        margin: 0px 0px 0px 30px;
+    }
+    .col .buscador form {
+        margin: 30px 10px 0px 20px;
+        padding: 10px;
+        height: 200px;
+        border: #e4e4e4 solid 1px;
+        border-radius: 10px 10px;
+        background-color: #e4e4e4;
+    }
+    .anuncios {
+        width: 98%;
+        margin: 10px 0px 0px 0px;
+    }
+    .anuncios h1 {
+        font-size: 0.9rem;
+        margin: 10px 0px 10px 20px;
+        color: #de8716;
+        text-align: center;
+    }
+    .anuncios .slider {
+        width: 550px;
+        height: 150px;
+    }
+    .slider .card {
+        width: 93%;
+        margin: 10px 0px 0px 0px;
+    }
+    .slider .card a {
+        width: 100%;
+    }
+    .avisocontainer {
+        width: 550px;
+        height: 100%;
+        display: block;
+        margin: 0px 0px 0px 10px;
+    }
+    .avisocontainer h1 {
+        font-size: 0.9rem;
+        margin: 10px 0px 10px 20px;
+        color: #de8716;
+        text-align: center;
+    }
+    .avisocontainer .avisouno {
+        display: flex;
+        justify-content: space-evenly;
+        cursor: pointer;
+    }
+    .avisouno .fecha {
+        font-size: 0.9rem;
+        margin: 10px -50px 0px -30px;
+    }
+    .avisouno .precio {
+        font-size: 0.9rem;
+        margin: 10px 0px 0px 0px;
+    }
+    .avisouno .region {
+        font-size: 0.7rem;
+        text-align: right;
+        margin: 10px 0px 0px 0px;
+    }
+    strong {
+        color: #de8716
+    }
+    .avisouno p {
+        color: black;
+    }
+    .avisouno img {
+        width: 80px;
+        height: 80px;
+        margin: 0px -40px 0px 0px;
+        border-radius: 10px 10px;
+    }
+    .avisodos img {
+        margin: 0px -50px 0px -20px;
+    }
+    .avisocinco .fecha,
+    .avisoseis .fecha {
+        margin: 10px -50px 0px -40px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1310px) {
+    .headeranuncontainer {
+        width: 100%;
+        height: 250px;
+        margin-top: -75px;
+    }
+    .textanun {
+        font-size: 1.1em;
+    }
+    .col {
+        display: flex;
+        justify-content: space-evenly;
+        text-align: center;
+    }
+    .col .buscador {
+        width: 100%;
+    }
+    .col .buscador form {
+        margin: 20px 10px 0px 20px;
+        padding: 5px;
+        height: 200px;
+        border: #e4e4e4 solid 1px;
+        border-radius: 10px 10px;
+        background-color: #e4e4e4;
+    }
+    .anuncios {
+        width: 70%;
+        margin: 10px 10px 0px 0px;
+    }
+    .anuncios h1 {
+        font-size: 1.2rem;
+        margin: 10px 0px 10px 20px;
+        color: #de8716;
+        text-align: left;
+    }
+    .anuncios .slider {
+        width: 100%;
+        height: 150px;
+    }
+    .slider .card {
+        width: 90%;
+        height: 120px;
+        margin: 10px 0px 0px 0px;
+    }
+    .slider .card a {
+        width: 100%;
+        padding: 0px 20px 0px 20px
+    }
+    .avisocontainer {
+        width: 95%;
+        height: 100%;
+        display: block;
+        margin: 0px 0px 0px 20px;
+    }
+    .avisocontainer h1 {
+        font-size: 1.2rem;
+        margin: 10px 0px 0px -80px;
+        color: #de8716;
+        text-align: center;
+    }
+    .avisocontainer .avisouno {
+        display: flex;
+        justify-content: space-evenly;
+        cursor: pointer;
+        margin: 0px 0px 10px 10px;
+    }
+    .avisouno .fecha {
+        font-size: 1rem;
+        margin: 20px -180px 0px -150px;
+    }
+    .avisouno .precio {
+        font-size: 1rem;
+        margin: 10px 50px 0px -200px;
+    }
+    .avisouno .region {
+        font-size: 0.8rem;
+        text-align: right;
+        margin: 10px -200px 0px 0px;
+    }
+    strong {
+        color: #de8716
+    }
+    .avisouno p {
+        color: black;
+    }
+    .avisouno img {
+        width: 80px;
+        height: 80px;
+        margin: 0px 0px 0px 0px;
+        border-radius: 10px 10px;
+    }
+    .avisodos img {
+        margin: 0px 0px 0px -20px;
+    }
+    .avisocinco img,
+    .avisoseis img {
+        margin: 0px 0px 0px -20px;
+    }
+}
